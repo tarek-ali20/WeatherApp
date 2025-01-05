@@ -31,6 +31,7 @@ async function getWeather() {
       <p>Weather: ${weatherData.weather[0].description}</p>
       <p>Humidity: ${weatherData.main.humidity}%</p>
     `;
+    
   } else {
     // Display error message if data is null
     weatherInfoDiv.innerHTML = `<p>Could not fetch weather data. Please try again.</p>`;
